@@ -1,0 +1,356 @@
+/* icons */
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Work+Sans:wght@300;400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.custom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 1px 8px 3px gray;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    font-family: 'Doppio One', sans-serif;
+    color: black;
+}
+
+.links-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 15px;
+}
+
+.links-container a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.links-container a:hover {
+    border-radius: 50px;
+    background-color: rgb(194, 189, 189);
+    color: white;
+}
+
+.dropdown-btn {
+    border-radius: 50px;
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+
+.search-container {
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    top: 11%;
+    left: 0%;
+    z-index: 1;
+}
+
+.nav-input {
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 15px;
+    min-width: 40%;
+    border: 1px solid gray;
+}
+
+.nav-input:focus {
+    outline-color: rgb(17, 127, 230);
+    box-shadow: 1px 1px 25px 3px rgb(17, 127, 230);
+}
+
+.nav-searchBtn {
+    font-size: 20px;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: -44px;
+}
+
+.nav-closeBtn {
+    background-color: rgb(61, 60, 60);
+    color: white;
+    font-size: 20px;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.close {
+    display: none;
+    width: 100%;
+    text-align: end;
+}
+
+.open {
+    display: none;
+}
+
+.sm-list {
+    display: none;
+}
+
+@media(max-width:768px) {
+    .links-container {
+        position: fixed;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 300px;
+        height: 100vh;
+        right: -320px;
+        top: 0%;
+        box-shadow: 1px 0px 20px 1px rgb(196, 195, 195);
+    }
+    .links-container a {
+        border: none;
+        display: block;
+        width: 100%;
+        margin: 0%;
+        margin-bottom: 10px;
+    }
+    .links-container a:hover {
+        border: none;
+        display: block;
+    }
+    .search-container {
+        top: 7%;
+    }
+    .open {
+        display: block;
+    }
+    .close {
+        display: block;
+    }
+    .sm-list {
+        display: block;
+    }
+    .SearchOpenContainer {
+        display: none;
+    }
+}
+
+
+/* ------------------login and registration------------------------------ */
+
+.sign-register-background {
+    background: rgba(0, 0, 0, 0.7) url('resources/background1.jpg');
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-register-form {
+    border: 1px solid rgb(209, 204, 204);
+    border-radius: 5px;
+    padding: 20px;
+    width: 550px;
+    background-color: white;
+}
+
+
+/* ---------------------cart page------------ */
+
+#inc,
+#dec {
+    border: none;
+    background-color: rgb(219, 213, 213);
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.custom-list {
+    list-style-type: none;
+    box-shadow: 1px 1px 10px 20px rgb(218, 216, 216);
+}
+
+
+/* --------------watch list----------- */
+
+.custom-nav-links {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.custom-nav-links:hover,
+.custom-active-link {
+    background-color: rgb(71, 70, 70);
+    color: white;
+    transition: 0.3s;
+}
+
+.page-btn {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.page-btn:hover,
+.page-btn-active {
+    background-color: rgb(124, 124, 250);
+    color: white;
+}
+
+.watchist-input {
+    border: 1px solid rgb(211, 208, 208);
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline-color: rgb(144, 144, 250);
+}
+
+
+/* -------------product listing---------- */
+
+.card:hover {
+    border: none;
+    box-shadow: 2px 2px 20px 15px rgb(204, 200, 200);
+    transition: .5s;
+}
+
+.custom-card-btn1 {
+    color: rgb(204, 200, 200);
+}
+
+.custom-card-btn1:hover {
+    color: rgba(224, 28, 28, 0.938);
+}
+
+.custom-card-btn2 {
+    text-decoration: none;
+    color: rgb(204, 200, 200);
+    border: 1px solid rgb(204, 200, 200);
+    padding: 5px 8px;
+    border-radius: 20px;
+}
+
+.custom-card-btn2:hover {
+    background-color: rgba(224, 28, 28, 0.938);
+    color: white;
+}
+
+.filterBtn {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.filterBtn:hover {
+    color: black;
+}
+
+.filterSection {
+    width: 25%;
+    padding: 1.5rem;
+}
+
+.filter-container {
+    padding: 1.5rem;
+}
+
+@media(max-width:768px) {
+    #filterSection {
+        position: fixed;
+        width: 300px;
+        top: 0%;
+        left: -300px;
+        padding: 0%;
+        height: 100%;
+        padding: 0px;
+        z-index: 3;
+        overflow: hidden;
+    }
+    .filter-container {
+        height: 100vh;
+    }
+}
+
+
+/* ----------admin-pannel------------ */
+
+.side-nav-link {
+    color: white;
+}
+
+.side-nav-link:hover {
+    background-color: white;
+    color: black;
+}
+
+.admin-sidenav {
+    width: 25%;
+}
+
+@media(max-width:768px) {
+    .admin-sidenav {
+        position: fixed;
+        width: 300px;
+        left: -300px;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+.admin-closeBtn {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* ------------manage users---------- */
+
+.search-user-btn {
+    background-color: transparent;
+}
+
+
+/* ----------advanced search ------------- */
+
+.advBtn {
+    background-color: transparent;
+    color: rgb(150, 145, 145);
+    border: none;
+    /* background-color: lightcyan */
+}
+
+.reset {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* ------admin login ---------- */
+
+.admin-login-container {
+    padding: 20px;
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.admin-keyImg {
+    width: 30px;
+    margin-top: -10px;
+    color: rgb(18, 194, 224);
+}
